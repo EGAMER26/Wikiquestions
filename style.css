@@ -15,28 +15,55 @@
     text-decoration: none;
     color: black;
     transition: 300ms;
+    scroll-behavior: smooth;
 
+    /* background-color: rgb(68, 5, 65); */
 }
 body {
     font-size: 1.6rem;
+    overflow-x: hidden;
     /* padding-inline: 8%; */
 }
+body img {
+    cursor: pointer;
+}
 /* --------------------------NAV------------------------ */
-
+nav {
+    transition: 900ms ease-in-out;
+}
 .allNave {
     width: 100%;
+    height: 12rem;
     min-width: 1024px;
 
     margin-inline: auto;
     padding-inline: 10%;
-    margin-top: 3rem;
+    padding-top: 3rem;
 
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav {
+nav .fixed{
+    /* position: fixed;
+     top: 0;
+    left: 0;  */
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0;
+    padding: 0 4rem;
+    background-color: aliceblue !important;
+
+    z-index: 45;
+    /* display: flex;  */
+
+    transition: 300ms;
+    
+    height: 12rem;
     
 
 }
@@ -46,9 +73,23 @@ nav {
     display: flex;
     margin-inline: auto;
 
-    width: 8rem;
+    width: 20%;
 }
-.navContent img {
+.navContent1 .scrollImg {
+    width: 90%;
+
+    transition: 900ms ease-in-out;
+}
+.navContent1 a {
+    width: 70%;
+}
+.navContent1 img {
+    width: 100%;
+    
+    
+    transition: 900ms;
+
+    
 }
 .navContent2 {
     width:80%;
@@ -141,6 +182,9 @@ header {
     padding-top: 16rem;
 
     background-color: var(--background-color);
+}
+header img {
+    cursor: initial;
 }
 .headerContent1 {
     width: 60%;
@@ -255,6 +299,9 @@ header {
     font-size: 4.4rem;
     font-weight: 800;
 }
+.contentRelatos img:hover {
+    transform: translateY(-10px);
+}
 .notas {
     display: flex; 
     flex-direction: column;
@@ -267,4 +314,168 @@ header {
     
 }
 
+
+
+
+
+/* --------------------------QUESTIONS------------------------ */
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentQuestions {
+    display: flex;
+    gap: 9rem;
+
+    justify-content: center;
+    align-items: center;
+}
+.contentQuestions1 {
+    height: 20rem;
+}
+.contentQuestions1 h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Alfa Slab One', cursive;
+}
+.contentQuestions1 .q1 {
+    position: relative;
+    bottom: 50rem;
+}
+.contentQuestions1 .q2 {
+    position: relative;
+    bottom: 5rem;
+}
+.contentQuestions1 .q3 {
+    position: relative;
+    bottom: -54rem;
+}
+.Questions {
+    display: flex;
+    flex-direction: column;
+    /* gap: 3rem; */
+    width: 40rem;
+}
+.contentQuestions2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    /* height: 20rem; */
+}
+.answer { 
+    position: relative;
+
+    top: 20rem;
+}
+.answer2 { 
+    position: relative;
+
+    top: 40rem;
+}
+.contentQuestions2 img:hover {
+    transform: translateY(-10px);
+}
+.comentario {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 20rem;
+    /* background-color: black; */
+
+}
+.elaine {
+    position: relative;
+    right: 20px;
+    bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bals {
+    display: flex;
+    gap: .5rem;
+
+    justify-content: center;
+    align-items: center;
+}
+.bol {
+    height: 1rem;
+    width: 1rem;
+
+    border-radius: 100%;
+
+    background-color: black;
+
+    animation: animation 1s ease-in-out infinite alternate;
+
+    opacity: .2;
+}
+
+.bals div:nth-child(1) {
+    animation-delay: -0.4s;
+}
+.bals div:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+@keyframes animation {
+    from{
+        transform: translateY(-50%);
+    }to{
+        transform: translateY(50%);
+    }
+}
+
+/* -----------------------BACKTOTOPBUTTON-------------------- */
+
+.buttonTop  {
+    width: 6rem;
+    height: 6rem;
+
+    background-color: var(--hover);
+    position: fixed;
+
+    bottom: 1rem;
+    right: 1rem;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.divButton {
+    transform: translateX(100px);
+    
+}
+
+.buttonIn {
+    transform: translateY(0px) !important;
+}
 
