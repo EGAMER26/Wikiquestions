@@ -1,6 +1,8 @@
 const navFix = document.querySelector(".allNave")
 const navImg = document.querySelector(".navContent1 a")
 const h = document.querySelector('#divButton')
+
+
 ScrollReveal({
     origin: 'bottom',
     distance: '1600px',
@@ -65,51 +67,94 @@ function button() {
 }
 //    button() 
 
-   
-// window.addEventListener('scroll', function() {
-//     navScroll();
 
-// })
+// --------------------------------------------------------------------------------------------
 
 
-// const onfixed = document.querySelector('.random')
-
-// function fixed() {
-//     if(onfixed.classList.contains('random')) {
-//         onfixed.classList.
-//     }
-// }
+var login = document.querySelector('.popup_wrapper')
+var showw = document.querySelector('.backgroundLogin')
+var showwcadastro = document.querySelector('.backgroundcadastro')
+var sectioncadastro = document.querySelector('.cadastrowrapper')
+var w = document.querySelector('body')
 
 
-// function animeScroll() {
-//     const windowTop = window.pageYOffset;
-//     console.log(windowTop)
-// }
-// window.addEventListener('scroll', function() {
-//     animeScroll();
-// })
 
-
-// function fixed() {
-//     const point = document.querySelector('.random')
-
-//     if (scrollY > 1802) {
-//         point.classList.add('ramdonFixed')
-//     } 
-//     if (scrollY < 1802) {
-//         point.classList.remove('ramdonFixed')
-//     } 
-//     if (scrollY > 2802) {
-//         point.classList.remove('ramdonFixed')
-//     } 
-//     if (scrollY > 2802) {
-//         point.classList.add('ramdonFixedd')
-//     } 
-//     if (scrollY < 2802) {
-//         point.classList.remove('ramdonFixedd')
-//     } 
-// }
-
-// window.addEventListener('scroll', function() {
-//     fixed();
-// })
+function loginOverflwY() {
+    if (w.classList.contains('overflowY')){
+    w.classList.remove('overflowY')}
+    else 
+    {w.classList.add('overflowY')}
+    }
+    function openLogin() {
+        if (login.classList.contains('show')) {
+          login.classList.remove('show')
+        } else {
+          login.classList.add('show')
+        }
+      }
+          
+      function showww() {
+          if (showw.classList.contains('showw')) {
+              showw.classList.remove('showw')}
+        else {showw.classList.add('showw')}
+    }
+       
+    
+    function contentcadastro() {
+        if (sectioncadastro.classList.contains('show')) {
+        sectioncadastro.classList.remove('show')}
+        else {
+          sectioncadastro.classList.add('show')}
+    }
+    
+    
+      function backcadastro() {
+        if (showwcadastro.classList.contains('showw')) {
+          showwcadastro.classList.remove('showw')}
+          else {showwcadastro.classList.add('showw')}
+        }
+    
+    
+    
+      function menuShow() {
+        if (ul.classList.contains('open')) {
+          ul.classList.remove('open')
+        } else {
+          ul.classList.add('open')
+        }
+      }
+      
+      function closeMenu() {
+        if (ul.classList.contains('open')) {
+          ul.classList.remove('open')
+        }
+      }
+      function hidden() {
+        if (w.classList.contains('hidden')) {
+          w.classList.remove('hidden')
+        } else {
+          w.classList.add('hidden')
+        }
+      }
+      
+      function menuShoww() {
+        menuShow();
+        hidden()
+      }
+      function allbackcadastro() {
+        // overshowlogin();
+        backcadastro();
+        contentcadastro();
+        loginOverflwY()
+      }
+      function closecadastro() {
+        contentcadastro();
+        backcadastro();
+        loginOverflwY()
+      
+      }
+      function overshowlogin() {
+          openLogin();
+        loginOverflwY();
+        // showww()
+      }

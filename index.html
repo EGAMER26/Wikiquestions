@@ -13,7 +13,92 @@
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Baloo+2&display=swap" rel="stylesheet">
     </head>
 <body onscroll="navScroll()">
-     <nav>
+       <nav>
+        <div class = "allhomelogin">
+            <div class = "backgroundLogin">
+            <img width = "100%" src = "/assets/backgroundLogin.jpg" alt = "">
+              </div>
+              <div class = "backgroundcadastro">
+              <img width = "100%" height = "100%" src = "/assets/backgroundCadastro.jpg" alt = "">
+              </div>
+              <div class = "popup_wrapper">
+              
+                <div    class   = "popup">
+                <a      onclick = "overshowlogin()" class = "closeOpenLogin" > <img width        = "20px" src                             = "/assets/closeLogin.png" alt = "close icone"></a>
+                <div    class   = "socialConectLinks">
+                <h2     class   = "entreContato">Entre com suas redes sociais</h2>
+                <button class   = "facebook" ><a class    = "facebook" href                      = "https://www.facebook.com/"><img width = "30px" height                = "30px" src                   = "/assets/facebookicon.png" alt = ""></a> <a href = "https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
+                <button class   = "google" ><a href       = "https://www.google.com/"><img width = "30px" height                          = "30px" src                   = "/assets/googleicon.png" alt = ""> </a> <a href               = "http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
+                  </div>
+                  <div  class  = "linha"><img height = "100%" src = "/assets/linha.png" alt = ""><div class = "ou"> <p>OU</p></div></div>
+                  <div  class  = "sectionLogin">
+                  <h2   class  = "slaaa" >Digite o seu e-mail e senha</h2>
+                  <div  class  = "allLogin">
+                  <form action = "" autocomplete     = "on"></form>
+                  <div  class  = "emailgeral">
+                  <div  class  = "email">
+              
+                  <input type = "email" id = "email" placeholder = "E-mail">
+                </div>
+              </div>
+              <div class = "senha">
+              
+                <input type = "password" id = "senha" placeholder = "Senha">
+              </div>
+                    </div>
+                    
+                    <div class = "forgot">
+                    <a   href  = "#">Esqueci minha senha</a>
+                    </div>
+                    <button class = "entrar"><a href = "#">Entrar</a></button>
+                  </div>
+              
+                </div>
+                <div onclick = "allbackcadastro()" class = "popupCadastro"><button>Cadastre-se</button></div>
+              </div>
+              <div class = "cadastrowrapper">
+              
+              
+                  <div    class   = "popup cadastro">
+                  <a      onclick = "closecadastro()" class = "closeOpenLogin" > <img width        = "20px" src                             = "/assets/closeLogin.png" alt = "close icone"></a>
+                  <div    class   = "socialConectLinks">
+                  <h2     class   = "entreContato">Cadastre-se com suas redes sociais</h2>
+                  <button class   = "facebook" ><a class    = "facebook" href                      = "https://www.facebook.com/"><img width = "30px" height                = "30px" src                   = "/assets/facebookicon.png" alt = ""></a> <a href = "https://www.facebook.com/"><h4> Entrar com Facebook</h4></a></button>
+                  <button class   = "google" ><a href       = "https://www.google.com/"><img width = "30px" height                          = "30px" src                   = "/assets/googleicon.png" alt = ""> </a> <a href               = "http://www.google.com.br/"><h4>Entrar com Google</h4></a></button>
+                    </div>
+                    <div class = "linha"><img height = "100%" src = "/assets/linha.png" alt = ""><div class = "ou"> <p>OU</p></div></div>
+                    <div class = "sectionLogin">
+                    <h2  class = "slaaa" >Crie uma conta com seu e-mail</h2>
+                    <div class = "allLogin">
+                  
+                        <form action = "" autocomplete = "on"></form>
+                        <div  class  = "emailgeral">
+                        <div  class  = "email">
+                  
+                    <input type = "text" maxlength = "30" id = "email" placeholder = "Nome completo">
+                  </div>
+                        </div>
+                        <div class = "senha">
+                  
+                  <input type = "email" maxlength = "50" id = "senha" placeholder = "E-mail">
+                        </div>
+                        <div class = "gender">
+                        <div class = "genero"><input type = "radio" name = "masculino"><p>Masculino</p></div>
+                        <div class = "genero"><input type = "radio" name = "feminino"><p>Feminino</p></div>
+                                        </div>
+                                        <div class = "idade gender">
+                                            <h4>Idade</h4>
+                                          <input type = "number" min = "1" max = "100" value = "" size"20" maxlength = "20">
+                                        </div>
+                        </div>
+                  
+                  
+                      <button class = "entrar buttoncadastro"><a href = "#">Cadastrar</a></button>
+                    </div>
+                  
+                  </div>
+              </div>
+            </div>
         <div class="allNave">
             <div class="navContent1">
                 <a href="#"><img width="90" src="/assets/Brainly_logo.svg.png" alt="logo"></a>
@@ -22,8 +107,8 @@
                 <input type="search" placeholder="Qual a sua pergunta?" required >
             </div>
             <div class="navContent2">
-                <a href="#">ENTRAR</a>
-                <a href="#">CADASTRE-SE JÁ</a>
+                <a onclick = "overshowlogin()" href="#">ENTRAR</a>
+                <a onclick="allbackcadastro()"  href="#">CADASTRE-SE JÁ</a>
                 <button>FAÇA UMA PERGUNTA</button>
             </div>
         </div>
@@ -164,6 +249,28 @@
             </div>
 
         </div>
+    </section>  
+    <section id="plus">
+        <div class="plusContainer">
+            <h2>Aprenda em outro nível <br>
+                e agilize seu progresso com o Brainly Plus
+                </h2>
+            <p>Receba ajuda de especialistas do Wikiquestions com explicações passo a passo que dão aquele clique</p>
+            <div class="cardPlus">
+                <h2>USE O Wikiquestions <br> PLUS</h2>
+                <div class="contentPlus">
+                    <img width="200" src="/assets/premium.svg" alt="selo premium">
+                </div>
+                <ul>
+                    <li>Acesso ilimitado, incluindo respostas verificadas por especialistas</li>
+                    <li>Respostas mais rápidas às suas perguntas</li>
+                    <li>Sem interrupção de anúncio. Mesmo.</li>
+                </ul>
+                <button><a href="#">ATUALIZAR AGORA</a></button>
+                <img width="820" class="pluspic" src="/assets/pluspic-removebg.png" alt="estudante">
+            </div>
+        </div>
+
     </section>
 
 
