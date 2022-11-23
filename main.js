@@ -67,6 +67,38 @@ function button() {
 }
 //    button() 
 
+let sla = document.querySelector('#MathSection')
+
+
+function mathOn() {
+  
+  if(sla.classList.contains('show')) {
+    sla.classList.remove('show')
+  } else {
+    sla.classList.add('show')
+  }
+}
+
+function mostrarMaterias() {
+  
+    math.addEventListener("click", mathOn)
+    
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 // --------------------------------------------------------------------------------------------
 

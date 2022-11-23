@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+.TittleCard {
+  display: flex;
+  font-size: 19px;
+  gap: 1%;
+  align-items: center;
+  margin-left: 1rem;
+}
+.TittleSb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 7%;
+}
+
+.AskBtn {
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+}
+/* =============CONTENT=============*/
+
+.AgroupContents {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 1%;
+}
+.MainCollum {
+  border: 2px solid #ebf2f7;
+  border-radius: 8px;
+  width: 35%;
+}
+
+.content1 h1 {
+  font-weight: 900;
+  font-size: 53px;
+  line-height: 60px;
+}
+.content1 {
+  margin-left: 40px;
+}
+
+.AskAswer {
+  padding: 0 24px;
+  display: flex;
+  margin-bottom: 4px;
+}
+.Ask-select {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* ==========================QUEST============================= */
+.iconUser,
+.brain {
+  width: 32px;
+  height: 32px;
+}
+
+.Quest {
+  border-bottom: 1px solid #ebf2f7;
+  border-top: 1px solid #ebf2f7;
+  padding: 24px;
+}
+
+.sbMain {
+  border: 2px solid #ebf2f7;
+  height: 423px;
+  width: 272px;
+  padding: 24px;
+  border-radius: 8px;
+}
+.selectElementNivel {
+  display: inline-block;
+  padding: 0 36px 0 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid #ebf2f7;
+  font-size: 16px;
+  color: #687b8c;
+  height: 40px;
+  background: #ebf2f7;
+  border-radius: 20px;
+}
+.selectElementAnswer {
+  display: inline-block;
+  padding: 0 36px 0 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid #ebf2f7;
+  font-size: 16px;
+  color: #687b8c;
+  height: 40px;
+  background: #ebf2f7;
+  border-radius: 20px;
+}
+.coroa {
+  color: #c98600;
+  width: 25px;
+  height: 25px;
+}
+.rUser {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.points {
+  width: 77px;
+  height: 24px;
+  margin-left: 45%;
+}
+
+.agroupIconThemePoint {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selectElement {
+  display: inline-block;
+  padding: 0 36px 0 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 60%;
+  border: 2px solid #ebf2f7;
+  font-size: 16px;
+  color: #687b8c;
+  height: 40px;
+  background: #ebf2f7;
+  border-radius: 20px;
+}
+
+.AnswerQuest {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #000;
+  color: #000;
+  border-radius: 16px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.AnswerQuestBtn {
+  display: flex;
+  flex-direction: row-reverse;
+}
