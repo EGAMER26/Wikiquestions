@@ -130,15 +130,17 @@ body img {
 }
 .showw {
   transform: translateX(0%)!important;
+  /* display: flex!important; */
 }
 .show {
-    transform: translateX(0%);
+  transform: translateX(0%);
+  display: flex!important;
    
   }
-  .popup_wrapper {
+  /* .popup_wrapper {
     display: none;
 
-  }
+  } */
 .linha {
   position: relative;
   margin-inline: auto;
@@ -374,7 +376,7 @@ color: white;
   z-index: 12;
   right: 0rem;
   top: 0rem;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   opacity: 1;
