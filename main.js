@@ -211,24 +211,6 @@ function backToBody() {
   
 }
 
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 // --------------------------------------------------------------------------------------------
 
 
@@ -247,6 +229,8 @@ function loginOverflwY() {
     {w.classList.add('overflowY')}
     }
     function openLogin() {
+var login = document.querySelector('.popup_wrapper')
+
         if (login.classList.contains('show')) {
           login.classList.remove('show')
         } else {
@@ -255,6 +239,8 @@ function loginOverflwY() {
       }
           
       function showww() {
+var showw = document.querySelector('.backgroundLogin')
+
           if (showw.classList.contains('showw')) {
               showw.classList.remove('showw')}
         else {showw.classList.add('showw')}
@@ -262,6 +248,8 @@ function loginOverflwY() {
        
     
     function contentcadastro() {
+var sectioncadastro = document.querySelector('.cadastrowrapper')
+
         if (sectioncadastro.classList.contains('show')) {
         sectioncadastro.classList.remove('show')}
         else {
@@ -270,6 +258,8 @@ function loginOverflwY() {
     
     
       function backcadastro() {
+var showwcadastro = document.querySelector('.backgroundcadastro')
+
         if (showwcadastro.classList.contains('showw')) {
           showwcadastro.classList.remove('showw')}
           else {showwcadastro.classList.add('showw')}
@@ -278,6 +268,8 @@ function loginOverflwY() {
     
     
       function menuShow() {
+var ul = document.querySelector('nav ul')
+
         if (ul.classList.contains('open')) {
           ul.classList.remove('open')
         } else {
@@ -286,11 +278,15 @@ function loginOverflwY() {
       }
       
       function closeMenu() {
+var ul = document.querySelector('nav ul')
+
         if (ul.classList.contains('open')) {
           ul.classList.remove('open')
         }
       }
       function hidden() {
+var w = document.querySelector('body')
+
         if (w.classList.contains('hidden')) {
           w.classList.remove('hidden')
         } else {
@@ -317,5 +313,5 @@ function loginOverflwY() {
       function overshowlogin() {
           openLogin();
         loginOverflwY();
-        // showww()
+        showww()
       }
