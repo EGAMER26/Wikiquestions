@@ -15,7 +15,7 @@
     font-family: 'Baloo 2', cursive;
     text-decoration: none;
     color: black;
-    transition: 300ms;
+    transition: 500ms;
     scroll-behavior: smooth;
 
     /* background-color: rgb(68, 5, 65); */
@@ -123,10 +123,10 @@ body img {
   transition: 400ms;
 }
 .showw {
-  transform: translateX(0%);
+  transform: translateX(0%)!important;
 }
 .show {
-    transform: translateY(15%);
+    transform: translateX(15%);
    
   }
   .popup_wrapper {
@@ -785,10 +785,12 @@ header img {
     height: 6rem;
 
     background-color: var(--hover);
-    position: fixed;
+    /* position: fixed; */
 
     bottom: 1rem;
     right: 1rem;
+
+    
 
     border-radius: 50%;
 
@@ -798,7 +800,14 @@ header img {
 
 }
 .divButton {
-    transform: translateX(100px);
+  transform: translateX(140%);
+
+    transition: 400ms;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    z-index: 2;
     
 }
 
@@ -942,7 +951,7 @@ button a:hover{
 
   transform: translateX(100%);
 
-  padding-top: 20rem;
+  /* padding-top: 20rem; */
 }
 .show {
   width: 100%;
@@ -977,9 +986,10 @@ button a:hover{
   border-radius: 30px;
 }
 .buttonback {
-  position: relative;
-  left: 180rem;
-  bottom: 65rem;
+
+  position:fixed;
+  top: 17rem;
+  left: 1rem;
 
   height: 6rem;
   width: 6rem;
@@ -990,16 +1000,87 @@ button a:hover{
 
   border-radius: 100%;
 
-  z-index: 7;
+  z-index: 9;
 
   background-color: black;
-  transform: rotate(-90deg);
+  
+  transition: 600ms ease-out;
+  
+  transform: translateY(-400%);
+
+  opacity: .3;
+  
+  
 }
 .buttonback svg {
   position: relative;
+  transform: rotate(-90deg);
   top: 4px;
 
 }
+.buttonbackOn {
+  transform: translateY(0%);
+  opacity: 1;
+}
+/* ---------------------------SECTIONS---------------------------- */
+#enemSection {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 15rem;
+  /* left: -100rem; */
+  transform: translateX(-100%);
+}
+
+#redacaoSection {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 15rem;
+  /* left: -100rem; */
+  transform: translateX(300%);
+
+}
+
+#MathSection {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 15rem;
+  /* left: -100rem; */
+  transform: translateX(-100%);
+}
+
+#historySection {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  top: 15rem;
+  /* left: -100rem; */
+  transform: translateX(300%);
+}
+.back {
+  height: 200%;
+  width: 100vw;
+
+  background-color: rgb(93, 215, 255);
+  
+  position: relative;
+  z-index: 9;
+}
+.none {
+  display: none;
+
+}
+
 /* =============CONTENT=============*/
 
 .AgroupContents {
@@ -1007,11 +1088,14 @@ button a:hover{
   margin: auto;
   justify-content: center;
   gap: 1%;
+
+  position: relative;
+  top: -40rem;
 }
 .MainCollum {
   border: 2px solid #ebf2f7;
   border-radius: 8px;
-  width: 35%;
+  width: 90%;
 }
 
 .content1 h1 {

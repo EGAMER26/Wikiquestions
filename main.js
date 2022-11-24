@@ -16,6 +16,7 @@ ScrollReveal({
   .answer2`);
 
 function navvScroll() {
+  
     if(scrollY > 2) {
         navFix.classList.add("fixed")
 
@@ -34,19 +35,33 @@ function navvScroll() {
     
     
 }
+
+// -----------------------------BUTTONS----------------------------------
 function buttonOn() {
-if (scrollY > 200) {
-    h.classList.add('show')
+let h = document.querySelector(".divButton");
+
+
+if (scrollY > 800) {
+    h.classList.add("showw")
     
 } else {
-    h.classList.remove('show')
+    h.classList.remove('showw')
     
 }
 }
 
+function buttonBackOn() {
+    let backSectionButton = document.querySelector(".buttonback")
+
+
+}
+
+
+
+// ----------------------------------------------------------------------
 function navScroll() {
     navvScroll();
-    // buttonOn()
+    buttonOn()
 }
 const btn = document.querySelector('.divButton');
 
@@ -67,24 +82,138 @@ function button() {
 }
 //    button() 
 
-let sla = document.querySelector('#MathSection')
+// ----------------------------------------------------------------------------------------------
+
+function enemOn() {
+  let sla = document.getElementById("enemSection");
+  let backSectionButton = document.querySelector(".buttonback");
 
 
-function mathOn() {
-  
-  if(sla.classList.contains('show')) {
-    sla.classList.remove('show')
+  if(sla.classList.contains("showw")) {
+    sla.classList.remove("showw")
   } else {
-    sla.classList.add('show')
-  }
-}
-
-function mostrarMaterias() {
-  
-    math.addEventListener("click", mathOn)
+    sla.classList.add("showw")
     
   }
+   if (backSectionButton.classList.contains("randonDiv")) {
+    backSectionButton.classList.add("buttonbackOn")
+
+   }
+    
+  offBody()
+}
+function redacaoOn() {
+  let sla = document.getElementById("redacaoSection");
+  let backSectionButton = document.querySelector(".buttonback");
+
+
+  if(sla.classList.contains("showw")) {
+    sla.classList.remove("showw")
+  } else {
+    sla.classList.add("showw")
+    
+  }
+  if (backSectionButton.classList.contains("randonDiv")) {
+    backSectionButton.classList.add("buttonbackOn")
+
+   }
+  offBody()
+}
+function mathOn() {
+  let sla = document.getElementById("MathSection");
+  let backSectionButton = document.querySelector(".buttonback");
+
+
+  if(sla.classList.contains("showw")) {
+    sla.classList.remove("showw")
+  } else {
+    sla.classList.add("showw")
+    
+  }
+  if (backSectionButton.classList.contains("randonDiv")) {
+    backSectionButton.classList.add("buttonbackOn")
+
+   }
+  offBody()
+}
+function historyOn() {
+  let sla = document.getElementById("historySection");
+  let backSectionButton = document.querySelector(".buttonback");
+
+
+  if(sla.classList.contains("showw")) {
+    sla.classList.remove("showw")
+  } else {
+    sla.classList.add("showw") 
+  }
+  if (backSectionButton.classList.contains("randonDiv")) {
+    backSectionButton.classList.add("buttonbackOn")
+
+   }
+  offBody()
+}
+function offBody() {
+  let backBOdy = document.getElementById("allContent");
+  let sla = document.getElementById("enemSection");
+  let sla2 = document.getElementById("redacaoSection");
+  let sla3 = document.getElementById("MathSection");
+  let sla4 = document.getElementById("historySection");
+
+
+  if(sla.classList.contains("showw")) {
+    backBOdy.classList.add("none")
+  }
+  if(sla2.classList.contains("showw")) {
+    backBOdy.classList.add("none")
+  }
+  if(sla3.classList.contains("showw")) {
+    backBOdy.classList.add("none")
+  }
+  if(sla4.classList.contains("showw")) {
+    backBOdy.classList.add("none")
+  } 
+
+}
+// --------------------------------------------------------------------------------------------------------------------------------
+function backToBody() {
+  let backBOdy = document.getElementById("allContent");
+  let sla = document.getElementById("enemSection");
+  let sla2 = document.getElementById("redacaoSection");
+  let sla3 = document.getElementById("MathSection");
+  let sla4 = document.getElementById("historySection");
+  let backSectionButton = document.querySelector(".buttonback");
+
+
+  if(sla.classList.contains("showw")) {
+    backBOdy.classList.toggle("none")
+    sla.classList.toggle("showw")
+  }
+  if(sla2.classList.contains("showw")) {
+    backBOdy.classList.toggle("none")
+    sla2.classList.toggle("showw")
+
+  }
+  if(sla3.classList.contains("showw")) {
+    backBOdy.classList.toggle("none")
+    sla3.classList.toggle("showw")
+
+  }
+  if(sla4.classList.contains("showw")) {
+    backBOdy.classList.toggle("none")
+    sla4.classList.toggle("showw")
+
+  }  else {
+    backSectionButton.classList.remove("buttonbackOn")
+    
+   }
+ 
   
+  
+}
+
+
+
+
   
   
 
